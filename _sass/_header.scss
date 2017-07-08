@@ -9,21 +9,21 @@
   &:hover {
     background: rgba($color-black, 0.5);
   }
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    list-style: none;
-    margin: 0;
-    li {
-      padding: 20px 30px;
-      align-self: center;
+  li {
+    padding: 20px 30px;
+    list-style-type: none;
+  }
+  li a {
+    color: $color-white;
+    &:hover {
+      text-decoration: none;
     }
-    li a {
-      color: $color-white;
-      &:hover {
-        text-decoration: none;
-      }
-    }
+  }
+}
+.nav {
+  float: right;
+  list-style-type: none;
+  li {
+    float: left;
   }
 }
