@@ -1,4 +1,4 @@
-# Jekyll Template, Boilerplate
+# DBelly LP
 
 Dbelly LP using Jekyll via [boilerplate](https://brianzotoole.com/?ref=https://github.com/brianotoole/jekyll-template).
 
