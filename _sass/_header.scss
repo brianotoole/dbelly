@@ -3,18 +3,25 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: $color-black;
+  background: $color-white;
   border-top: 4px solid $color-secondary;
   z-index: 1;
   li {
-    padding: 20px;
+    padding: 25px 20px;
     list-style-type: none;
   }
   li a {
-    color: $color-white;
+    color: $color-primary;
+    font-weight: 700;
     &:hover {
       text-decoration: none;
     }
+  }
+  .logo a {
+    color: $color-black;
+  }
+  a.btn {
+    color: $color-white;
   }
 }
 .nav {

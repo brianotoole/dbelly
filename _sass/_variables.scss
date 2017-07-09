@@ -2,8 +2,8 @@
 
 // colors - brand
 $color-body: #0c0c0c;
-$color-primary: #CA054D; //magenta
-$color-secondary: #A4D4B4; //l green
+$color-primary: #c5202d; //red
+$color-secondary: #304712; //green
 $color-primary-dark: darken($color-primary, 7%);
 $color-secondary-dark: darken($color-secondary, 7%);
 
@@ -14,7 +14,7 @@ $color-link-dark: darken($color-primary-dark, 7%);
 
 // colors - others
 $color-white: #fff;
-$color-black: #000;
+$color-black: #232f38;
 $color-gray: #555;
 
 // measurements - relative sizings of fonts in %

@@ -31,12 +31,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h1,
 .h1 {
   font-size: 2em;
-  font-weight: 700;
-  padding-top: 0.5em; }
+  font-weight: 700; }
   @media (min-width: 50em) {
     h1,
     .h1 {
-      font-size: 3.5em; } }
+      font-size: 3em; } }
 
 h2,
 .h2 {
@@ -83,10 +82,10 @@ p {
       font-size: 1.125em; } }
 
 a {
-  color: #a70440;
+  color: #a61b26;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #840332;
+    color: #88161f;
     text-decoration: underline; }
 
 img {
@@ -104,10 +103,6 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0; }
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
 
 .container-fluid {
   margin-right: auto;
@@ -318,7 +313,7 @@ ol ul {
       -ms-flex-order: 1;
           order: 1; }
 
-@media (max-width: 50em) {
+@media (min-width: 50em) {
   [class*="col-sm"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -459,7 +454,7 @@ ol ul {
         -ms-flex-order: 1;
             order: 1; } }
 
-@media (max-width: 60em) {
+@media (min-width: 60em) {
   [class*="col-md"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -604,26 +599,29 @@ ol ul {
   max-width: 80em;
   width: 88%; }
 
-.flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.section-wrap {
+  padding: 6.25em 3.125em; }
 
 .header {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  background: #000;
-  border-top: 4px solid #A4D4B4;
+  background: #fff;
+  border-top: 4px solid #304712;
   z-index: 1; }
   .header li {
-    padding: 20px;
+    padding: 25px 20px;
     list-style-type: none; }
   .header li a {
-    color: #fff; }
+    color: #c5202d;
+    font-weight: 700; }
     .header li a:hover {
       text-decoration: none; }
+  .header .logo a {
+    color: #232f38; }
+  .header a.btn {
+    color: #fff; }
 
 .nav {
   float: right;
@@ -633,35 +631,90 @@ ol ul {
 
 .hero {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/bg-hero.jpg");
+  width: 100%; }
+  .hero .hero-text {
+    color: #fff;
+    z-index: 2; }
+
+.height-full {
+  height: 100vh; }
+
+.hero-left {
+  background: #232f38;
+  color: #fff; }
+
+.hero-right {
+  background-image: url("https://images.unsplash.com/photo-1455114043983-850c8a283975?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center; }
-  .hero:before {
+  background-position: center center; }
+  .hero-right:after {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    background: rgba(164, 212, 180, 0.4); }
-  .hero .hero-text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    padding: 0;
-    text-align: center;
-    color: #fff;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    z-index: 2; }
-    .hero .hero-text > * {
-      line-height: 0.5; }
+    background: rgba(35, 47, 56, 0.1); }
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 40px; }
+
+.underline {
+  border-bottom: 1px #fff dashed; }
 
 .intro {
   height: 900px;
-  color: black; }
+  color: black;
+  background: #948c7c; }
+
+.btn {
+  margin: 0;
+  width: 200px;
+  text-align: center;
+  padding: 0.5625em 1.75em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #c5202d;
+  text-decoration: none;
+  border-radius: 3px; }
+  .btn.primary {
+    background: #c5202d; }
+    .btn.primary:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #a21a25;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .btn.primary:active {
+      text-decoration: none;
+      color: #fff;
+      background: #570e14; }
+  .btn.secondary {
+    background: #304712; }
+    .btn.secondary:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #1a260a;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .btn.secondary:active {
+      text-decoration: none;
+      color: #fff;
+      background: black; }
+  .btn.white {
+    background: #fff; }
+    .btn.white:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #ebebeb;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .btn.white:active {
+      text-decoration: none;
+      color: #fff;
+      background: #bfbfbf; }

@@ -1,37 +1,47 @@
 .hero {
   position: relative;
   width: 100%;
+  .hero-text {
+    color: $color-white;
+    z-index: 2;
+  }
+}
+
+.height-full {
   height: 100vh;
-  background-image: url('../images/bg-hero.jpg');
+}
+
+.hero-left {
+  background: $color-black;
+  color: $color-white;
+}
+.hero-right {
+  background-image: url('https://images.unsplash.com/photo-1455114043983-850c8a283975?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  &:before {
+  background-position: center center;
+  &:after {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    background: rgba($color-secondary, 0.4);
+    background: rgba($color-black, 0.1);
   }
-  .hero-text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    padding: 0;
-    text-align: center;
-    color: $color-white;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    > * {
-      line-height: 0.5;
-    }
-  }
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.underline {
+  border-bottom: 1px $color-white dashed;
 }
 
 .intro {
   height: 900px;
   color: black;
+  background: #948c7c;
 }
