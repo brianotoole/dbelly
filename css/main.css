@@ -600,13 +600,11 @@ ol ul {
   width: 88%; }
 
 .section-wrap {
-  padding: 6.25em 3.125em; }
+  padding: 3.125em 0 5em 3.125em; }
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 0;
-  left: 0;
   background: #fff;
   border-top: 4px solid #304712;
   z-index: 1; }
@@ -619,7 +617,7 @@ ol ul {
     .header li a:hover {
       text-decoration: none; }
   .header .logo a {
-    color: #232f38; }
+    color: #333; }
   .header a.btn {
     color: #fff; }
 
@@ -655,7 +653,7 @@ ol ul {
     right: 0;
     width: 50%;
     height: 100%;
-    background: rgba(35, 47, 56, 0.1); }
+    background: rgba(51, 51, 51, 0.1); }
 
 .hero .btn {
   display: inline-block;
